@@ -143,6 +143,7 @@ body{
     background-color: rgb(237, 209, 172);
     height: 100%;
     width: 100%;
+    z-index: 3;
 }
 
 #tic1{
@@ -282,6 +283,7 @@ body{
     border: #000 solid 2px;
     float: right;
     margin: 10px 20px;
+    z-index: 3;
 }
 
 #btn:hover{
@@ -299,6 +301,7 @@ body{
     margin: auto;
     position: relative;
     top: 0px;
+    z-index: 2;
 }
 
 @media (min-width:930px) {
