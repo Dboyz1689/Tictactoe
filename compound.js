@@ -2284,14 +2284,12 @@ function elisten() {
 function xwinner() {
     ywin.style.display = "none"
     draw.style.display = "none"
-    win = 1
     winner.style.animationName = ""
     xwin.style.display = "block"
     winner.style.animationName = "winner"
 }
 
 function ywinner() {
-    win = 1
     xwin.style.display = "none"
     draw.style.display = "none"
     winner.style.animationName = ""
@@ -2301,7 +2299,6 @@ function ywinner() {
 
 
 function drawer() {
-    win = 1
     xwin.style.display = "none"
     ywin.style.display = "none"
     winner.style.animationName = ""
@@ -2319,7 +2316,7 @@ function restart() {
     cplay = ["x", "x", "x", "x", "x", "x", "x", "x", "x"]
     won = ["", "", "", "", "", "", "", "", ""]
     win = [0,0,0,0,0,0,0,0,0]
-    let pos = [[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ]]
+    pos = [[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ],[ , , , , , , , , ]]
     x1.style.display = "none"
     x2.style.display = "none"
     x3.style.display = "none"
