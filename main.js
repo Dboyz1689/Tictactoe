@@ -1,5 +1,7 @@
 console.log("nigga?")
 
+
+
 let s1 = document.getElementById("space1")
 let s2 = document.getElementById("space2")
 let s3 = document.getElementById("space3")
@@ -54,6 +56,7 @@ let ywin = document.getElementById("ywin")
 let draw = document.getElementById("draw")
 let b = document.getElementById("b")
 let c = document.getElementById("c")
+
 
 btn.addEventListener("click", (e) => {
     restart()
