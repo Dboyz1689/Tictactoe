@@ -248,7 +248,7 @@ body{
     font-size: 15px;
 }
 
-#play{
+#play, #help, #settings{
     width: auto;
     border: none;
 }
@@ -343,7 +343,7 @@ body{
 .c:hover{
     background-color: white;
     color: rgb(218, 149, 58);
-    #play{
+    #play, #help, #settings{
         background-color: white;
     color: rgb(218, 149, 58);
     }

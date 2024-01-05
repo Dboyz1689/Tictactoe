@@ -68,13 +68,7 @@ btn.addEventListener("mouseover", (e) => {
     document.getElementById("header").style.animationName = ""
 })
 
-b.addEventListener("mouseenter", (e) => {
-    b.innerText = "Home"
-})
 
-b.addEventListener("mouseleave", (e) => {
-    b.innerText = "TicTacToe"
-})
 
 
 
