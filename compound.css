@@ -171,6 +171,12 @@ body{
     width: 100%;
 }
 
+@media (max-width:500px) {
+    body{
+        width: 500px;
+    }
+}
+
 .buttons{
     background-color: rgb(237, 209, 172);
     height: 100%;
