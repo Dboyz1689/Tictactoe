@@ -12,7 +12,6 @@
             <button id="button" title="Home"><a href="index.html" class="b" id="b">TicTacToe</a></button>
             <div class="nav">
                 <ul>
-                    <li><a href="#" class="a">Modes</i></a></li>
                     <li><a href="#" class="a">Help</a></li>
                     <li><a href="#" class="a">Settings</a></li>
                 </ul>
@@ -20,8 +19,8 @@
         </div>
     </nav>
     <header class="header" id="header">
-        <div class="winner" id="winner"><span class="win" id="xwin">X Wins!!!</span><span class="win" id="ywin">O Wins!!!</span><span class="win" id="draw">Draw!!!</span></div>
-        <div class="buttons"><button id="btn">Restart</button></div>
+        <div class="winner" id="winner"><span></span><span class="win" id="xwin">X Wins!!!</span><span class="win" id="ywin">O Wins!!!</span><span class="win" id="draw">Draw!!!</span></div>
+        <div class="buttons"><span class="current" id="current">X plays anywhere</span><button id="btn">Restart</button></div>
         <div class="container">
             <div class="board">
                 <div class="lines">
@@ -51,19 +50,433 @@
                 </div>
                 <div class="spaces">
                     <div class="row" id="row1">
-                        <div class="space" id="space1"><span class="x" id="x1">x</span><span class="o" id="o1">o</span></div>
-                        <div class="space" id="space2"><span class="x" id="x2">x</span><span class="o" id="o2">o</span></div>
-                        <div class="space" id="space3"><span class="x" id="x3">x</span><span class="o" id="o3">o</span></div>
+                        <div class="space" id="space1">
+                            <span class="x" id="x1">x</span><span class="o" id="o1">o</span>
+                            <div class="bib1" id="bib1">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline11"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline12"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline13"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl11"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl12"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline11"></div></div>
+                                        <div class="vlcover"><div id="vline12"></div></div>
+                                        <div class="vlcover"><div id="vline13"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space11"><span class="x" id="x11">x</span><span class="o" id="o11">o</span></div>
+                                        <div class="sspace" id="space12"><span class="x" id="x12">x</span><span class="o" id="o12">o</span></div>
+                                        <div class="sspace" id="space13"><span class="x" id="x13">x</span><span class="o" id="o13">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space14"><span class="x" id="x14">x</span><span class="o" id="o14">o</span></div>
+                                        <div class="sspace" id="space15"><span class="x" id="x15">x</span><span class="o" id="o15">o</span></div>
+                                        <div class="sspace" id="space16"><span class="x" id="x16">x</span><span class="o" id="o16">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space17"><span class="x" id="x17">x</span><span class="o" id="o17">o</span></div>
+                                        <div class="sspace" id="space18"><span class="x" id="x18">x</span><span class="o" id="o18">o</span></div>
+                                        <div class="sspace" id="space19"><span class="x" id="x19">x</span><span class="o" id="o19">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space" id="space2">
+                            <span class="x" id="x2">x</span><span class="o" id="o2">o</span>
+                            <div class="bib1" id="bib2">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline21"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline22"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline23"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl21"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl22"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline21"></div></div>
+                                        <div class="vlcover"><div id="vline22"></div></div>
+                                        <div class="vlcover"><div id="vline23"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space21"><span class="x" id="x21">x</span><span class="o" id="o21">o</span></div>
+                                        <div class="sspace" id="space22"><span class="x" id="x22">x</span><span class="o" id="o22">o</span></div>
+                                        <div class="sspace" id="space23"><span class="x" id="x23">x</span><span class="o" id="o23">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space24"><span class="x" id="x24">x</span><span class="o" id="o24">o</span></div>
+                                        <div class="sspace" id="space25"><span class="x" id="x25">x</span><span class="o" id="o25">o</span></div>
+                                        <div class="sspace" id="space26"><span class="x" id="x26">x</span><span class="o" id="o26">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space27"><span class="x" id="x27">x</span><span class="o" id="o27">o</span></div>
+                                        <div class="sspace" id="space28"><span class="x" id="x28">x</span><span class="o" id="o28">o</span></div>
+                                        <div class="sspace" id="space29"><span class="x" id="x29">x</span><span class="o" id="o29">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space" id="space3">
+                            <span class="x" id="x3">x</span><span class="o" id="o3">o</span>
+                            <div class="bib1" id="bib3">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline31"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline32"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline33"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl31"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl32"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline31"></div></div>
+                                        <div class="vlcover"><div id="vline32"></div></div>
+                                        <div class="vlcover"><div id="vline33"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space31"><span class="x" id="x31">x</span><span class="o" id="o31">o</span></div>
+                                        <div class="sspace" id="space32"><span class="x" id="x32">x</span><span class="o" id="o32">o</span></div>
+                                        <div class="sspace" id="space33"><span class="x" id="x33">x</span><span class="o" id="o33">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space34"><span class="x" id="x34">x</span><span class="o" id="o34">o</span></div>
+                                        <div class="sspace" id="space35"><span class="x" id="x35">x</span><span class="o" id="o35">o</span></div>
+                                        <div class="sspace" id="space36"><span class="x" id="x36">x</span><span class="o" id="o36">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space37"><span class="x" id="x37">x</span><span class="o" id="o37">o</span></div>
+                                        <div class="sspace" id="space38"><span class="x" id="x38">x</span><span class="o" id="o38">o</span></div>
+                                        <div class="sspace" id="space39"><span class="x" id="x39">x</span><span class="o" id="o39">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row" id="row2">
-                        <div class="space" id="space4"><span class="x" id="x4">x</span><span class="o" id="o4">o</span></div>
-                        <div class="space" id="space5"><span class="x" id="x5">x</span><span class="o" id="o5">o</span></div>
-                        <div class="space" id="space6"><span class="x" id="x6">x</span><span class="o" id="o6">o</span></div>
+                        <div class="space" id="space4">
+                            <span class="x" id="x4">x</span><span class="o" id="o4">o</span>
+                            <div class="bib2" id="bib4">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline41"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline42"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline43"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl41"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl42"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline41"></div></div>
+                                        <div class="vlcover"><div id="vline42"></div></div>
+                                        <div class="vlcover"><div id="vline43"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space41"><span class="x" id="x41">x</span><span class="o" id="o41">o</span></div>
+                                        <div class="sspace" id="space42"><span class="x" id="x42">x</span><span class="o" id="o42">o</span></div>
+                                        <div class="sspace" id="space43"><span class="x" id="x43">x</span><span class="o" id="o43">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space44"><span class="x" id="x44">x</span><span class="o" id="o44">o</span></div>
+                                        <div class="sspace" id="space45"><span class="x" id="x45">x</span><span class="o" id="o45">o</span></div>
+                                        <div class="sspace" id="space46"><span class="x" id="x46">x</span><span class="o" id="o46">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space47"><span class="x" id="x47">x</span><span class="o" id="o47">o</span></div>
+                                        <div class="sspace" id="space48"><span class="x" id="x48">x</span><span class="o" id="o48">o</span></div>
+                                        <div class="sspace" id="space49"><span class="x" id="x49">x</span><span class="o" id="o49">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space" id="space5">
+                            <span class="x" id="x5">x</span><span class="o" id="o5">o</span>
+                            <div class="bib2" id="bib5">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline51"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline52"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline53"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl51"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl52"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline51"></div></div>
+                                        <div class="vlcover"><div id="vline52"></div></div>
+                                        <div class="vlcover"><div id="vline53"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space51"><span class="x" id="x51">x</span><span class="o" id="o51">o</span></div>
+                                        <div class="sspace" id="space52"><span class="x" id="x52">x</span><span class="o" id="o52">o</span></div>
+                                        <div class="sspace" id="space53"><span class="x" id="x53">x</span><span class="o" id="o53">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space54"><span class="x" id="x54">x</span><span class="o" id="o54">o</span></div>
+                                        <div class="sspace" id="space55"><span class="x" id="x55">x</span><span class="o" id="o55">o</span></div>
+                                        <div class="sspace" id="space56"><span class="x" id="x56">x</span><span class="o" id="o56">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space57"><span class="x" id="x57">x</span><span class="o" id="o57">o</span></div>
+                                        <div class="sspace" id="space58"><span class="x" id="x58">x</span><span class="o" id="o58">o</span></div>
+                                        <div class="sspace" id="space59"><span class="x" id="x59">x</span><span class="o" id="o59">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space" id="space6">
+                            <span class="x" id="x6">x</span><span class="o" id="o6">o</span>
+                            <div class="bib2" id="bib6">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline61"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline62"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline63"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl61"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl62"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline61"></div></div>
+                                        <div class="vlcover"><div id="vline62"></div></div>
+                                        <div class="vlcover"><div id="vline63"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space61"><span class="x" id="x61">x</span><span class="o" id="o61">o</span></div>
+                                        <div class="sspace" id="space62"><span class="x" id="x62">x</span><span class="o" id="o62">o</span></div>
+                                        <div class="sspace" id="space63"><span class="x" id="x63">x</span><span class="o" id="o63">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space64"><span class="x" id="x64">x</span><span class="o" id="o64">o</span></div>
+                                        <div class="sspace" id="space65"><span class="x" id="x65">x</span><span class="o" id="o65">o</span></div>
+                                        <div class="sspace" id="space66"><span class="x" id="x66">x</span><span class="o" id="o66">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space67"><span class="x" id="x67">x</span><span class="o" id="o67">o</span></div>
+                                        <div class="sspace" id="space68"><span class="x" id="x68">x</span><span class="o" id="o68">o</span></div>
+                                        <div class="sspace" id="space69"><span class="x" id="x69">x</span><span class="o" id="o69">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row" id="row3">
-                        <div class="space" id="space7"><span class="x" id="x7">x</span><span class="o" id="o7">o</span></div>
-                        <div class="space" id="space8"><span class="x" id="x8">x</span><span class="o" id="o8">o</span></div>
-                        <div class="space" id="space9"><span class="x" id="x9">x</span><span class="o" id="o9">o</span></div>
+                        <div class="space" id="space7">
+                            <span class="x" id="x7">x</span><span class="o" id="o7">o</span>
+                            <div class="bib3" id="bib7">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline71"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline72"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline73"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl71"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl72"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline71"></div></div>
+                                        <div class="vlcover"><div id="vline72"></div></div>
+                                        <div class="vlcover"><div id="vline73"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space71"><span class="x" id="x71">x</span><span class="o" id="o71">o</span></div>
+                                        <div class="sspace" id="space72"><span class="x" id="x72">x</span><span class="o" id="o72">o</span></div>
+                                        <div class="sspace" id="space73"><span class="x" id="x73">x</span><span class="o" id="o73">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space74"><span class="x" id="x74">x</span><span class="o" id="o74">o</span></div>
+                                        <div class="sspace" id="space75"><span class="x" id="x75">x</span><span class="o" id="o75">o</span></div>
+                                        <div class="sspace" id="space76"><span class="x" id="x76">x</span><span class="o" id="o76">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space77"><span class="x" id="x77">x</span><span class="o" id="o77">o</span></div>
+                                        <div class="sspace" id="space78"><span class="x" id="x78">x</span><span class="o" id="o78">o</span></div>
+                                        <div class="sspace" id="space79"><span class="x" id="x79">x</span><span class="o" id="o79">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space" id="space8">
+                            <span class="x" id="x8">x</span><span class="o" id="o8">o</span>
+                            <div class="bib3" id="bib8">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline81"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline82"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline83"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc12"><div id="sl82"></div></div>
+                                        <div class="scover" id="sc11"><div id="sl81"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline81"></div></div>
+                                        <div class="vlcover"><div id="vline82"></div></div>
+                                        <div class="vlcover"><div id="vline83"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space81"><span class="x" id="x81">x</span><span class="o" id="o81">o</span></div>
+                                        <div class="sspace" id="space82"><span class="x" id="x82">x</span><span class="o" id="o82">o</span></div>
+                                        <div class="sspace" id="space83"><span class="x" id="x83">x</span><span class="o" id="o83">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space84"><span class="x" id="x84">x</span><span class="o" id="o84">o</span></div>
+                                        <div class="sspace" id="space85"><span class="x" id="x85">x</span><span class="o" id="o85">o</span></div>
+                                        <div class="sspace" id="space86"><span class="x" id="x86">x</span><span class="o" id="o86">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space87"><span class="x" id="x87">x</span><span class="o" id="o87">o</span></div>
+                                        <div class="sspace" id="space88"><span class="x" id="x88">x</span><span class="o" id="o88">o</span></div>
+                                        <div class="sspace" id="space89"><span class="x" id="x89">x</span><span class="o" id="o89">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space" id="space9">
+                            <span class="x" id="x9">x</span><span class="o" id="o9">o</span>
+                            <div class="bib3" id="bib9">
+                                <div class="lines">
+                                    <div class="vlines">
+                                        <div class="vcover" id="vcover1"><div class="vline" id="v1"></div></div>
+                
+                                        <div class="vcover" id="vcover2"><div class="vline" id="v2"></div></div>
+                
+                                    </div>
+                                    <div class="hlines">
+                                        <div class="hfill" id="hfill1"><div class="hlcover"><div id="hline91"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h1"></div></div>
+                                        <div class="hfill" id="hfill2"><div class="hlcover"><div id="hline92"></div></div></div>
+                                        <div class="cover"><div class="hline" id="h2"></div></div>
+                                        <div class="hfill" id="hfill3"><div class="hlcover"><div id="hline93"></div></div></div>
+                                    </div>
+                                    <div class="slines">
+                                        <div class="scover" id="sc11"><div id="sl91"></div></div>
+                                        <div class="scover" id="sc12"><div id="sl92"></div></div>
+                                    </div>
+                
+                                    <div class="vl">
+                                        <div class="vlcover"><div id="vline91"></div></div>
+                                        <div class="vlcover"><div id="vline92"></div></div>
+                                        <div class="vlcover"><div id="vline93"></div></div>
+                                    </div>
+                                </div>
+                                <div class="spaces">
+                                    <div class="row" id="row1">
+                                        <div class="sspace" id="space91"><span class="x" id="x91">x</span><span class="o" id="o91">o</span></div>
+                                        <div class="sspace" id="space92"><span class="x" id="x92">x</span><span class="o" id="o92">o</span></div>
+                                        <div class="sspace" id="space93"><span class="x" id="x93">x</span><span class="o" id="o93">o</span></div>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="sspace" id="space94"><span class="x" id="x94">x</span><span class="o" id="o94">o</span></div>
+                                        <div class="sspace" id="space95"><span class="x" id="x95">x</span><span class="o" id="o95">o</span></div>
+                                        <div class="sspace" id="space96"><span class="x" id="x96">x</span><span class="o" id="o96">o</span></div>
+                                    </div>
+                                    <div class="row" id="row3">
+                                        <div class="sspace" id="space97"><span class="x" id="x97">x</span><span class="o" id="o97">o</span></div>
+                                        <div class="sspace" id="space98"><span class="x" id="x98">x</span><span class="o" id="o98">o</span></div>
+                                        <div class="sspace" id="space99"><span class="x" id="x99">x</span><span class="o" id="o99">o</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

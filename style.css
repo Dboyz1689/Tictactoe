@@ -1,3 +1,10 @@
+.space{
+    width: 33.3%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 150px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -169,6 +176,18 @@ body{
     height: 100%;
     width: 100%;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current{
+    width: 80%;
+    margin: 5px auto;
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 #tic1{
@@ -213,6 +232,8 @@ body{
     transition-property: all;
     transition-duration: 0.75s;
 }
+
+
 
 
 
@@ -343,7 +364,7 @@ body{
 
 .winner{
     position: absolute;
-    top: 0px;
+    top: 50px;
     height: 100%;
     width: 100%;
     background: #000;
@@ -481,6 +502,27 @@ body{
     position: relative;
 }
 
+.bib1{
+    height: 80%;
+    width: 85%;
+    margin: 0px auto auto auto;
+    position: relative;
+}
+
+.bib2{
+    height: 80%;
+    width: 85%;
+    margin: auto auto auto auto;
+    position: relative;
+}
+
+.bib3{
+    height: 80%;
+    width: 85%;
+    margin: auto auto 0px auto;
+    position: relative;
+}
+
 .hlines, .slines{
     display: contents;
     flex-direction: column;
@@ -509,16 +551,16 @@ body{
     align-items: center;
 }
 
-#sc1{
+#sc1, #sc11, #sc21, #sc31, #sc41, #sc51, #sc61, #sc71, #sc81, #sc91{
     transform: rotate(53deg);
     width: 8px;
-    height: 526px;
+    height: 100%;
 }
 
-#sc2{
+#sc2, #sc12, #sc22, #sc32, #sc42, #sc52, #sc62, #sc72, #sc82, #sc92{
     transform: rotate(307deg);
     width: 8px;
-    height: 515px;
+    height: 100%;
 }
 
 .vlines{
@@ -549,7 +591,7 @@ body{
 
 
 
-.vline, #s1, #s2, #vline1, #vline2, #vline3{
+.vline, #s1, #s2, #vline1, #vline2, #vline3, #sl11, #sl12, #sl21, #sl22, #sl31, #sl32, #sl41, #sl42, #sl51, #sl52, #sl61, #sl62, #sl71, #sl72, #sl81, #sl82, #sl91, #sl92, #vline11, #vline12, #vline13, #vline21, #vline22, #vline23, #vline31, #vline32, #vline33, #vline41, #vline42, #vline43, #vline51, #vline52, #vline53, #vline61, #vline62, #vline63, #vline71, #vline72, #vline73, #vline81, #vline82, #vline83, #vline91, #vline92, #vline93{
     background-color: black;
     border: 0.5px solid;
     padding: 2px;
@@ -557,12 +599,12 @@ body{
     width: 4px;
 }
 
-#vline1, #vline2, #vline3,#s1, #s2{
+#vline1, #vline2, #vline3,#s1, #s2, #sl11, #sl12, #sl21, #sl22, #sl31, #sl32, #sl41, #sl42, #sl51, #sl52, #sl61, #sl62, #sl71, #sl72, #sl81, #sl82, #sl91, #sl92, #vline11, #vline12, #vline13, #vline21, #vline22, #vline23, #vline31, #vline32, #vline33, #vline41, #vline42, #vline43, #vline51, #vline52, #vline53, #vline61, #vline62, #vline63, #vline71, #vline72, #vline73, #vline81, #vline82, #vline83, #vline91, #vline92, #vline93{
     width: 1px;
     display: none;
 }
 
-.hline, #hline1, #hline2, #hline3{
+.hline, #hline1, #hline2, #hline3, #hline11, #hline12, #hline13, #hline21, #hline22, #hline23, #hline31, #hline32, #hline33, #hline41, #hline42, #hline43, #hline51, #hline52, #hline53, #hline61, #hline62, #hline63, #hline71, #hline72, #hline73, #hline81, #hline82, #hline83, #hline91, #hline92, #hline93{
     background-color: black;
     border: 0.5px solid;
     padding: 2px;
@@ -573,21 +615,22 @@ body{
 
 
 
-#hline1{
+#hline1, #hline11, #hline21, #hline31, #hline41, #hline51, #hline61, #hline71, #hline81, #hline91{
     position: absolute;
     top: 300%;
     height: 1px;
     display: none;
 }
 
-#hline2{
+
+#hline2, #hline12, #hline22, #hline32, #hline42, #hline52, #hline62, #hline72, #hline82, #hline92{
     position: absolute;
     top: 150%;
     height: 1px;
     display: none;
 }
 
-#hline3{
+#hline3, #hline13, #hline23, #hline33, #hline43, #hline53, #hline63, #hline73, #hline83, #hline93{
     position: absolute;
     bottom: 150%;
     height: 1px;
@@ -611,12 +654,30 @@ body{
     flex-direction: row;
 }
 
-.space{
+
+
+#space1, #space2, #space3, #space4, #space5, #space6, #space7, #space8, #space9{
+    border: none;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bin {
+    0%{border: none;}
+    100%{border: 2px solid black;}
+}
+
+@keyframes bout {
+    0%{border: 2px solid black;}
+    100%{border: none;}
+}
+
+.sspace{
     width: 33.3%;
     display: grid;
     place-items: center;
     font-weight: bold;
-    font-size: 150px;
+    font-size: 50px;
 }
 
 #space1{
@@ -629,6 +690,23 @@ body{
 
 .x{
     display: none;
+}
+
+#x1, #x2, #x3, #x4, #x5, #x6, #x7, #x8, #x9{
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#o1, #o2, #o3, #o4, #o5, #o6, #o7, #o8, #o9{
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes space {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .o{
